@@ -2,7 +2,7 @@ FROM centos:7
 MAINTAINER rleme@br.ibm.com
 LABEL APP="PHP"
 
-ENV PORT 8080
+ENV PORT 80
 RUN yum -y install php && \
     yum -y install httpd && \
     yum -y clean all 
