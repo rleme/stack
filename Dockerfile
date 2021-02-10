@@ -1,5 +1,5 @@
 FROM centos:7
-MANTAINER rleme@br.ibm.com
+MAINTAINER rleme@br.ibm.com
 LABEL APP="PHP"
 
 ENV PORT 8080
