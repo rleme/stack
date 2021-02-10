@@ -7,7 +7,7 @@ RUN yum -y install php && \
     yum -y install httpd && \
     yum -y clean data
 
-COPY ./php/index.php  /var/www/html/
+COPY ./src/  /var/www/html/
 USER apache
 EXPOSE ${PORT}
 CMD ["httpd","-D", "start"]
