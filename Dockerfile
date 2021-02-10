@@ -5,7 +5,7 @@ LABEL APP="PHP"
 ENV PORT 8080
 RUN yum -y install php && \
     yum -y install httpd && \
-    yum -y clean data
+    yum -y clean all 
 
 COPY ./src/  /var/www/html/
 USER apache
