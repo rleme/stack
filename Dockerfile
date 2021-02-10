@@ -10,4 +10,4 @@ RUN echo "ServerName 127.0.0.1" >>/etc/httpd/conf/httpd.conf
 COPY ./src/  /var/www/html/
 USER apache
 EXPOSE ${PORT}
-CMD ["httpd","-D", "start"]
+CMD ["httpd","-D","FOREGROUND"]
