@@ -1,3 +1,10 @@
 <?php
-print "Hello, World! php version is Leme 01  " . PHP_VERSION . "\n";
+
+// Mostra todas as informações, usa o padrão INFO_ALL
+phpinfo();
+
+// Mostra apenas informações dos módulos.
+// phpinfo(8) mostra um resultado identico.
+phpinfo(INFO_MODULES);
+
 ?>
